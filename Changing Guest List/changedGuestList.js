@@ -1,5 +1,10 @@
 guestList = ["mom", "brother", "father"];
 
-guestList[0] = "friend";
+let poppedItem = guestList.pop()
+guestList.push("hamza")
 
-console.log(`Hi ${guestList[0]}, I'm having pasta for dinner tonight, would you care to join me?`);
+console.log(`Hi ${guestList[0]}, you are still comming right?`)
+console.log(`Hi ${guestList[1]}, you are still comming right?`)
+console.log(`Hi ${guestList[2]}, I'm having dinner tonight, would you like to join me?`)
+
+console.log(poppedItem)
