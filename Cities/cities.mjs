@@ -2,10 +2,11 @@ import PromptSync from "prompt-sync";
 const prompt = PromptSync()
 
 
-function describeCities(cityName = prompt("What's your city name?"), 
-countryName = prompt("What's your country name?") || "pakistan") {
+function describeCities(cityName, countryName = "pakistan") {
     let message = `${cityName} is in ${countryName}.`
     return message;
 }
 
-console.log(describeCities())
+console.log(describeCities("karachi",));
+console.log(describeCities("london", "england"));
+console.log(describeCities("mumbai", "india"));
