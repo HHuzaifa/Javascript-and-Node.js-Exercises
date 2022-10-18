@@ -4,6 +4,14 @@ function showMNames(namesList) {
     }
     }
     
-    let magiciansNames = ["elliot", "james", "howlet", "stacy", "ruvenald"];
-    showMNames(magiciansNames);
-    
+var magiciansNames = ["elliot", "james", "howlet", "stacy", "ruvenald"];
+showMNames(magiciansNames);
+
+
+function makeGreat(array) {
+    for (let i = 0; i < array.length; i++) {
+        array[i] = `The great ${array[i]}`
+    }return array
+}
+
+showMNames(makeGreat(magiciansNames))
